@@ -1,6 +1,6 @@
 import { useParams, useNavigate } from "react-router-dom";
 import { useState } from "react";
-import { Image, Box, Heading, Tabs, Button } from "@chakra-ui/react";
+import { Image, Box, Heading, Tabs, Button, Highlight } from "@chakra-ui/react";
 import { StepperInput } from "../components/ui/stepper-input";
 import { DataListItem, DataListRoot } from "../components/ui/data-list";
 import {
@@ -74,7 +74,7 @@ const RecipePage = () => {
           <i className="fa-solid fa-heart" style={{ fontSize: "2.5rem" }}></i>
         </Button>
         <Image
-          src={recipe?.image}
+          src={"/rezepte/" + recipe?.image}
           alt={recipe?.title}
           width="100%"
           height="min(50vh, 80vw)"
@@ -105,9 +105,9 @@ const RecipePage = () => {
             width="80%"
             margin="auto"
             marginTop="3vh"
+            marginBottom="3vh"
             fitted
             defaultValue={"zutaten"}
-            transition="ttransform 0.3s ease"
           >
             <Tabs.List>
               <Tabs.Trigger value="zutaten">Zutaten</Tabs.Trigger>
@@ -118,7 +118,6 @@ const RecipePage = () => {
                 width="100%"
                 padding="min(5vw, 5vh)"
                 margin="auto"
-                marginBottom="min(10vh, 10vw)"
                 rounded="md"
                 bg={{ base: "rgb(240,241,233)", _dark: "rgb(15,15,15)" }}
                 key="zutaten"
@@ -207,6 +206,29 @@ const RecipePage = () => {
           </Tabs.Root>
         </div>
       </div>
+      <Box
+        width="80%"
+        padding="4"
+        margin="auto"
+        rounded="md"
+        bg={{ base: "rgb(240,241,233)", _dark: "rgb(15,15,15)" }}
+        marginBottom="min(10vh, 10vw)"
+      >
+        <Heading size="xl">
+          {" "}
+          <Highlight
+            query={recipe?.author ?? ""}
+            styles={{
+              px: "2",
+              bg: "green",
+              borderRadius: "2px",
+              padding: "2px",
+            }}
+          >
+            {`von ${recipe?.author ?? ""}`}
+          </Highlight>
+        </Heading>
+      </Box>
     </>
   );
 };

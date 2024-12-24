@@ -64,6 +64,17 @@ const recipeMealTypeList = createListCollection({
   ],
 });
 
+const sortOptions = createListCollection({
+  items: [
+    {
+      label: "Alphabetisch",
+      value: "alphabetisch",
+      icon: "fa-solid fa-arrow-down-a-z",
+    },
+    { label: "Zufällig", value: "zufällig", icon: "fa-solid fa-shuffle" },
+  ],
+});
+
 import recipeOverviewList from "../assets/recipes.json";
 
 const RecipePanels = () => {
@@ -80,15 +91,18 @@ const RecipePanels = () => {
   const [selectedMealTypes, setSelectedMealTypes] = useState<string[]>([]);
   const [selectedTime, setSelectedTime] = useState(100);
   const [selectedLiked, setSelectedLiked] = useState(false);
+  const [selectedSorting, setSelectedSorting] = useState("");
 
-  const filteredRecipes = recipeOverviewList.filter(
+  let filteredRecipes = recipeOverviewList.filter(
     (recipe) =>
       recipe.title.toLowerCase().includes(searchTerm.toLowerCase()) &&
       (recipe.difficulty.toLowerCase().includes(selectedDifficulties[0]) ||
         recipe.difficulty.toLowerCase().includes(selectedDifficulties[1]) ||
         recipe.difficulty.toLowerCase().includes(selectedDifficulties[2]) ||
         selectedDifficulties.length === 0) &&
-      (selectedBadges.every((badge) => recipe.badges.includes(badge)) ||
+      (selectedBadges.every((badge) =>
+        (recipe.badges as string[]).includes(badge)
+      ) ||
         selectedBadges.length == 0) &&
       (selectedMealTypes.every((mealType) =>
         recipe.mealType.includes(mealType)
@@ -102,6 +116,15 @@ const RecipePanels = () => {
       ((selectedLiked == true && likedRecipes.includes(recipe.slug)) ||
         selectedLiked == false)
   );
+
+  if (selectedSorting === "alphabetisch") {
+    filteredRecipes = [...filteredRecipes].sort((a, b) =>
+      a.title.toLowerCase().localeCompare(b.title.toLowerCase())
+    );
+    console.log(filteredRecipes);
+  } else if (selectedSorting === "zufällig") {
+    filteredRecipes = [...filteredRecipes].sort(() => Math.random() - 0.5);
+  }
 
   return (
     <>
@@ -134,17 +157,18 @@ const RecipePanels = () => {
       </Box>
       <Box
         display="flex"
-        flexWrap={"wrap"}
+        flexWrap="wrap"
         textAlign="center"
         width="90%"
-        justifyContent={"center"}
-        alignItems={"center"}
+        justifyContent="space-between"
+        alignItems="center"
       >
         <SelectRoot
           multiple
           collection={recipeDifficultyList}
           size="sm"
-          width="max(150px, 15vw)"
+          flex="1 1 calc(25% - 10px)"
+          minWidth="150px"
           margin={"10px"}
           onValueChange={(details) => {
             const values = details.value;
@@ -181,7 +205,8 @@ const RecipePanels = () => {
           multiple
           collection={recipeBadgesList}
           size="sm"
-          width="max(150px, 15vw)"
+          flex="1 1 calc(25% - 10px)"
+          minWidth="150px"
           margin={"10px"}
           onValueChange={(details) => {
             const values = details.value;
@@ -220,7 +245,8 @@ const RecipePanels = () => {
           multiple
           collection={recipeMealTypeList}
           size="sm"
-          width="max(150px, 15vw)"
+          flex="1 1 calc(25% - 10px)"
+          minWidth="150px"
           margin={"10px"}
           onValueChange={(details) => {
             const values = details.value;
@@ -258,7 +284,8 @@ const RecipePanels = () => {
             <Button
               variant="outline"
               size="sm"
-              width="max(150px, 15vw)"
+              flex="1 1 calc(25% - 10px)"
+              minWidth="150px"
               margin="10px"
             >
               <Box
@@ -270,7 +297,9 @@ const RecipePanels = () => {
               >
                 <i
                   className="fa-solid fa-clock"
-                  style={{ marginRight: "8px" }}
+                  style={{
+                    marginRight: "8px",
+                  }}
                 ></i>{" "}
                 Arbeitszeit
               </Box>
@@ -302,7 +331,8 @@ const RecipePanels = () => {
         <Button
           variant="outline"
           size="sm"
-          width="max(150px, 15vw)"
+          flex="1 1 calc(25% - 10px)"
+          minWidth="150px"
           margin="10px"
           onClick={() => {
             setSelectedLiked(selectedLiked === false ? true : false);
@@ -326,6 +356,41 @@ const RecipePanels = () => {
             Gespeichert
           </Box>
         </Button>
+        <SelectRoot
+          collection={sortOptions}
+          size="sm"
+          flex="1 1 calc(25% - 10px)"
+          minWidth="150px"
+          margin={"10px"}
+          onValueChange={(value) => {
+            setSelectedSorting(value.value[0]);
+          }}
+        >
+          <SelectTrigger clearable>
+            <Box
+              display="flex"
+              alignItems="center"
+              justifyContent="flex-start"
+              width="100%"
+              color="rgb(127, 127, 127)"
+            >
+              <i
+                className="fa-solid fa-arrow-up-wide-short"
+                style={{ marginRight: "8px" }}
+              ></i>
+              <SelectValueText placeholder="Sortieren" />
+            </Box>
+          </SelectTrigger>
+
+          <SelectContent>
+            {sortOptions.items.map((sortOption) => (
+              <SelectItem item={sortOption} key={sortOption.value}>
+                <i className={sortOption.icon}></i>
+                {sortOption.label}
+              </SelectItem>
+            ))}
+          </SelectContent>
+        </SelectRoot>
       </Box>
 
       <div
@@ -362,7 +427,10 @@ const RecipePanels = () => {
               overflow="hidden"
               margin={"10px"}
               width={"320px"}
-              onClick={() => window.location.assign(recipe.slug)}
+              onClick={() => {
+                window.scrollTo(0, 0);
+                window.location.assign("/rezepte/#/" + recipe.slug);
+              }}
               _hover={{
                 cursor: "pointer",
 
@@ -399,8 +467,8 @@ const RecipePanels = () => {
                           JSON.stringify(updatedRecipes)
                         );
                       } else {
-                        const updatedRecipes = [...likedRecipes, recipe.slug]; // Append new recipe to the array
-                        setLikedRecipes(updatedRecipes); // Update the state
+                        const updatedRecipes = [...likedRecipes, recipe.slug];
+                        setLikedRecipes(updatedRecipes);
                         localStorage.setItem(
                           "likedRecipes",
                           JSON.stringify(updatedRecipes)
@@ -421,7 +489,7 @@ const RecipePanels = () => {
                     ></i>
                   </Button>
                   <Image
-                    src={recipe.image}
+                    src={"/rezepte/" + recipe.image}
                     alt={recipe.title}
                     height="250px"
                     width="100%"

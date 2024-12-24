@@ -21,7 +21,7 @@ const Navbar = () => {
                 rounded="md"
                 padding="min(1vh, 1vw) min(2vh, 2vw) min(1vh, 1vw) min(2vh, 2vw)"
               >
-                <LinkOverlay href="/" fontSize={"2rem"}>
+                <LinkOverlay href="/rezepte" fontSize={"2rem"}>
                   Rezepte &nbsp;
                   <i
                     style={{ color: "#65A603" }}
