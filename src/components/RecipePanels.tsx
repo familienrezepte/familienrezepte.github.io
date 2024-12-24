@@ -429,7 +429,7 @@ const RecipePanels = () => {
               width={"320px"}
               onClick={() => {
                 window.scrollTo(0, 0);
-                window.location.assign("/rezepte/#/" + recipe.slug);
+                window.location.assign("/#/" + recipe.slug);
               }}
               _hover={{
                 cursor: "pointer",
@@ -489,7 +489,7 @@ const RecipePanels = () => {
                     ></i>
                   </Button>
                   <Image
-                    src={"/rezepte/" + recipe.image}
+                    src={"/" + recipe.image}
                     alt={recipe.title}
                     height="250px"
                     width="100%"

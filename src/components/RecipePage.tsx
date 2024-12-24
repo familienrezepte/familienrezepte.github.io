@@ -74,7 +74,7 @@ const RecipePage = () => {
           <i className="fa-solid fa-heart" style={{ fontSize: "2.5rem" }}></i>
         </Button>
         <Image
-          src={"/rezepte/" + recipe?.image}
+          src={"/" + recipe?.image}
           alt={recipe?.title}
           width="100%"
           height="min(50vh, 80vw)"
