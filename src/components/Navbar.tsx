@@ -17,7 +17,7 @@ const Navbar = () => {
               }}
             >
               <LinkBox
-                bg={{ base: "rgb(240,240,233)", _dark: "rgb(15,15,15)" }}
+                bg={{ base: "rgb(240,241,233)", _dark: "rgb(15,15,15)" }}
                 rounded="md"
                 padding="min(1vh, 1vw) min(2vh, 2vw) min(1vh, 1vw) min(2vh, 2vw)"
               >
