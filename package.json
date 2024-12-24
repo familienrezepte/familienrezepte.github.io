@@ -1,6 +1,6 @@
 {
   "name": "react-app",
-  "homepage": "https://familienrezepte.github.io/",
+  "homepage": "https://familienrezepte.github.io",
   "version": "0.0.0",
   "type": "module",
   "scripts": {
