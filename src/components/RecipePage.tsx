@@ -143,7 +143,7 @@ const RecipePage = () => {
                       {ingredient.title}
                     </Heading>
                     <DataListRoot
-                      minWidth="12vh"
+                      maxW="sm"
                       orientation="horizontal"
                       size="lg"
                       key={String(ingredient.title + "list")}
