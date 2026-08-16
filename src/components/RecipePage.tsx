@@ -139,6 +139,9 @@ const RecipePage = () => {
                 />
                 {recipe?.ingredients.map((ingredient) => (
                   <>
+                    <Heading key={ingredient.title} margin="1em 0 1em 0">
+                      {ingredient.title}
+                    </Heading>
                     <DataListRoot
                       orientation="horizontal"
                       size="lg"
@@ -147,8 +150,7 @@ const RecipePage = () => {
                       {ingredient.ingredientList.map((ingredientList) => (
                         <DataListItem
                           key={ingredientList.ingredientName}
-                          label={ingredientList.ingredientName}
-                          value={
+                          label={
                             (ingredientList.ingredientAmount
                               ? parseFloat(
                                   (
@@ -163,6 +165,7 @@ const RecipePage = () => {
                               ? ingredientList.ingredientUnit
                               : "")
                           }
+                          value={ingredientList.ingredientName}
                         />
                       ))}
                     </DataListRoot>
