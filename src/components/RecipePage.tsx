@@ -1,8 +1,16 @@
 import { useParams, useNavigate } from "react-router-dom";
 import { useState } from "react";
-import { Image, Box, Heading, Tabs, Button, Highlight } from "@chakra-ui/react";
+import {
+  Image,
+  Box,
+  Heading,
+  Tabs,
+  Button,
+  Highlight,
+  DataList,
+} from "@chakra-ui/react";
 import { StepperInput } from "../components/ui/stepper-input";
-import { DataListItem, DataListRoot } from "../components/ui/data-list";
+import { DataListRoot } from "../components/ui/data-list";
 import {
   TimelineConnector,
   TimelineContent,
@@ -143,16 +151,14 @@ const RecipePage = () => {
                       {ingredient.title}
                     </Heading>
                     <DataListRoot
-                      maxW="sm"
                       orientation="horizontal"
                       size="lg"
                       key={String(ingredient.title + "list")}
                     >
                       {ingredient.ingredientList.map((ingredientList) => (
-                        <DataListItem
-                          key={ingredientList.ingredientName}
-                          label={
-                            (ingredientList.ingredientAmount
+                        <DataList.Item key={ingredientList.ingredientName}>
+                          <DataList.ItemLabel minW="12vh">
+                            {(ingredientList.ingredientAmount
                               ? parseFloat(
                                   (
                                     (ingredientList.ingredientAmount *
@@ -161,13 +167,15 @@ const RecipePage = () => {
                                   ).toFixed(2),
                                 ).toString()
                               : "") +
-                            " " +
-                            (ingredientList.ingredientUnit
-                              ? ingredientList.ingredientUnit
-                              : "")
-                          }
-                          value={ingredientList.ingredientName}
-                        />
+                              " " +
+                              (ingredientList.ingredientUnit
+                                ? ingredientList.ingredientUnit
+                                : "")}
+                          </DataList.ItemLabel>
+                          <DataList.ItemValue>
+                            {ingredientList.ingredientName}
+                          </DataList.ItemValue>
+                        </DataList.Item>
                       ))}
                     </DataListRoot>
                   </>
