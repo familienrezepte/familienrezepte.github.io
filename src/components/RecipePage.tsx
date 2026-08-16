@@ -26,7 +26,7 @@ const RecipePage = () => {
     }
   }, [recipe, navigate]);
   const [selectedPortions, setSelectedPortions] = useState(
-    (recipe?.portions || "").toString()
+    (recipe?.portions || "").toString(),
   );
   const [likedRecipes, setLikedRecipes] = useState<string[]>(() => {
     const storedRecipes = localStorage.getItem("likedRecipes");
@@ -50,19 +50,19 @@ const RecipePage = () => {
             e.stopPropagation();
             if (likedRecipes.includes(recipe?.slug ?? "")) {
               const updatedRecipes = likedRecipes.filter(
-                (recipeSlug) => recipeSlug !== (recipe?.slug ?? "")
+                (recipeSlug) => recipeSlug !== (recipe?.slug ?? ""),
               );
               setLikedRecipes(updatedRecipes);
               localStorage.setItem(
                 "likedRecipes",
-                JSON.stringify(updatedRecipes)
+                JSON.stringify(updatedRecipes),
               );
             } else {
               const updatedRecipes = [...likedRecipes, recipe?.slug ?? ""]; // Append new recipe to the array
               setLikedRecipes(updatedRecipes); // Update the state
               localStorage.setItem(
                 "likedRecipes",
-                JSON.stringify(updatedRecipes)
+                JSON.stringify(updatedRecipes),
               );
             }
           }}
@@ -138,9 +138,6 @@ const RecipePage = () => {
                 />
                 {recipe?.ingredients.map((ingredient) => (
                   <>
-                    <Heading key={ingredient.title} margin="1em 0 1em 0">
-                      {ingredient.title}
-                    </Heading>
                     <DataListRoot
                       orientation="horizontal"
                       size="lg"
@@ -157,7 +154,7 @@ const RecipePage = () => {
                                     (ingredientList.ingredientAmount *
                                       Number(selectedPortions)) /
                                     recipe.portions
-                                  ).toFixed(2)
+                                  ).toFixed(2),
                                 ).toString()
                               : "") +
                             " " +
@@ -168,6 +165,9 @@ const RecipePage = () => {
                         />
                       ))}
                     </DataListRoot>
+                    <Heading key={ingredient.title} margin="1em 0 1em 0">
+                      {ingredient.title}
+                    </Heading>
                   </>
                 ))}
               </Box>

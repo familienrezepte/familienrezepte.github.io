@@ -752,7 +752,7 @@
       },
       {
         "title": "Belag zubereiten",
-        "description": "Die Bananen halbieren und auf den Biskuitboden legen. Aus der Milch und dem Puddingpulver einen Pudding kochen. Die eingeweichte Gelatine unterheben und das Ganze erkalten lassen. Zuletzt die steif geschlagene Sahne unterheben. Danach die Masse auf den Bananen verteilen und fest werden lassen"
+        "description": "Die Bananen halbieren und auf den Biskuitboden legen. Aus der Milch und dem Puddingpulver einen Pudding kochen. Die eingeweichte Gelatine unterheben und das Ganze erkalten lassen. Zuletzt die steif geschlagene Sahne unterheben. Danach die Masse auf den Bananen verteilen und fest werden lassen."
       },
       {
         "title": "Guss zubereiten",
@@ -846,7 +846,7 @@
       },
       {
         "title": "Gemüse schneiden",
-        "description": "Zwiebel, Paprika, Karotten und Chili würfeln und die Frühlingsziebeln in feine Rädchen schneiden. Beim Pak Choi das Blatt vom Stiel trennen, den Stihl ebenfalls würfeln, die Blätter in Stücke reißen"
+        "description": "Zwiebel, Paprika, Karotten und Chili würfeln und die Frühlingsziebeln in feine Rädchen schneiden. Beim Pak Choi das Blatt vom Stiel trennen, den Stihl ebenfalls würfeln, die Blätter in Stücke reißen."
       },
       {
         "title": "Anbraten",
@@ -862,7 +862,7 @@
       },
       {
         "title": "Würzen",
-        "description": "Mit der Sojasoße ablöschen und mit Kreuzkümmel, Curry und etwas Koriander abschmecken"
+        "description": "Mit der Sojasoße ablöschen und mit Kreuzkümmel, Curry und etwas Koriander abschmecken."
       }
     ],
     "author": "Felix"
@@ -874,7 +874,7 @@
     "image": "UeberbackeneMaultaschen.jpg",
     "badges": ["vegetarisch"],
     "time": 10,
-    "difficulty": "Mittel",
+    "difficulty": "Einfach",
     "type": ["salzig", "kochen"],
     "mealType": ["hauptspeise"],
     "portions": 2,
@@ -931,6 +931,122 @@
       {
         "title": "Ofen",
         "description": "Alternativ kann auch ein Ofen mit Ober- und Unterhitze verwendet werden."
+      }
+    ],
+    "author": "Felix"
+  },
+  {
+    "id": 12,
+    "title": "Djuvec Reis",
+    "slug": "djuvec-reis",
+    "image": "DjuvecReis.jpg",
+    "badges": ["laktosefrei", "vegetarisch", "vegan"],
+    "time": 60,
+    "difficulty": "Mittel",
+    "type": ["salzig", "kochen"],
+    "mealType": ["hauptspeise", "beilage"],
+    "portions": 6,
+    "ingredients": [
+      {
+        "title": "Für den Djuvec Reis:",
+        "ingredientList": [
+          {
+            "ingredientName": "Gemüsebrühe",
+            "ingredientAmount": 1000,
+            "ingredientUnit": "ml"
+          },
+          {
+            "ingredientName": "Parboiled Langkornreis",
+            "ingredientAmount": 500,
+            "ingredientUnit": "g"
+          },
+          {
+            "ingredientName": "Paprika",
+            "ingredientAmount": 3,
+            "ingredientUnit": null
+          },
+          {
+            "ingredientName": "Tomaten",
+            "ingredientAmount": 3,
+            "ingredientUnit": null
+          },
+          {
+            "ingredientName": "Zwiebeln",
+            "ingredientAmount": 4,
+            "ingredientUnit": null
+          },
+          {
+            "ingredientName": "Knoblauchzehen",
+            "ingredientAmount": 4,
+            "ingredientUnit": null
+          },
+          {
+            "ingredientName": "TK Erbsen",
+            "ingredientAmount": 250,
+            "ingredientUnit": "g"
+          },
+          {
+            "ingredientName": "Ajvar aus dem Glas",
+            "ingredientAmount": 250,
+            "ingredientUnit": "g"
+          },
+          {
+            "ingredientName": "Butter (vegan: Magarine)",
+            "ingredientAmount": 75,
+            "ingredientUnit": "g"
+          },
+          {
+            "ingredientName": "Paprikapulver",
+            "ingredientAmount": 3,
+            "ingredientUnit": "TL"
+          },
+          {
+            "ingredientName": "Tomatenmark",
+            "ingredientAmount": 8,
+            "ingredientUnit": "TL"
+          },
+          {
+            "ingredientName": "Olivenöl",
+            "ingredientAmount": 8,
+            "ingredientUnit": "TL"
+          },
+          {
+            "ingredientName": "Salz",
+            "ingredientAmount": null,
+            "ingredientUnit": null
+          },
+          {
+            "ingredientName": "schwarzer Pfeffer",
+            "ingredientAmount": null,
+            "ingredientUnit": null
+          }
+        ]
+      }
+    ],
+    "preparation": [
+      {
+        "title": "Reis kochen",
+        "description": "Den Reis im gesalzenen Wasser kochen (Auf 1 Teil Reis etwa 2 Teile Wasser)"
+      },
+      {
+        "title": "Gemüse schneiden",
+        "description": "Zwiebel, Paprika, Karotten und Chili würfeln und die Frühlingsziebeln in feine Rädchen schneiden. Beim Pak Choi das Blatt vom Stiel trennen, den Stihl ebenfalls würfeln, die Blätter in Stücke reißen."
+      },
+      {
+        "title": "Anbraten",
+        "description": "Die Zwiebelwürfel in Butter anbraten, bis sie glasig sind. Danach das Hähnchen hinzufügen und goldbraun anbraten."
+      },
+      {
+        "title": "Gemüse hinzufügen",
+        "description": "Frühlingszwiebeln und Karotten in die Pfanne geben, wenig später auch Paprika, Chili und die Pak Choi-Stiele hinzufügen."
+      },
+      {
+        "title": "Reis dazugeben",
+        "description": "Den gekochten Reis und die Pak Choi Blätter zum Schluss beimischen und weiter anbraten."
+      },
+      {
+        "title": "Würzen",
+        "description": "Mit der Sojasoße ablöschen und mit Kreuzkümmel, Curry und etwas Koriander abschmecken."
       }
     ],
     "author": "Felix"
