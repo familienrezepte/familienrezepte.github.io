@@ -151,27 +151,26 @@ const RecipePage = () => {
                         <DataListItem
                           key={ingredientList.ingredientName}
                           label={
-                            (ingredientList.ingredientAmount
-                              ? parseFloat(
-                                  (
-                                    (ingredientList.ingredientAmount *
-                                      Number(selectedPortions)) /
-                                    recipe.portions
-                                  ).toFixed(2),
-                                ).toString()
-                              : "") +
-                            " " +
-                            (ingredientList.ingredientUnit
-                              ? ingredientList.ingredientUnit
-                              : "")
+                            <div style={{ minWidth: "12vh" }}>
+                              {(ingredientList.ingredientAmount
+                                ? parseFloat(
+                                    (
+                                      (ingredientList.ingredientAmount *
+                                        Number(selectedPortions)) /
+                                      recipe.portions
+                                    ).toFixed(2),
+                                  ).toString()
+                                : "") +
+                                " " +
+                                (ingredientList.ingredientUnit
+                                  ? ingredientList.ingredientUnit
+                                  : "")}
+                            </div>
                           }
                           value={ingredientList.ingredientName}
                         />
                       ))}
                     </DataListRoot>
-                    <Heading key={ingredient.title} margin="1em 0 1em 0">
-                      {ingredient.title}
-                    </Heading>
                   </>
                 ))}
               </Box>

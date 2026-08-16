@@ -998,17 +998,17 @@
           {
             "ingredientName": "Paprikapulver",
             "ingredientAmount": 3,
-            "ingredientUnit": "TL"
+            "ingredientUnit": "EL"
           },
           {
             "ingredientName": "Tomatenmark",
             "ingredientAmount": 8,
-            "ingredientUnit": "TL"
+            "ingredientUnit": "EL"
           },
           {
             "ingredientName": "Olivenöl",
             "ingredientAmount": 8,
-            "ingredientUnit": "TL"
+            "ingredientUnit": "EL"
           },
           {
             "ingredientName": "Salz",
@@ -1025,28 +1025,28 @@
     ],
     "preparation": [
       {
-        "title": "Reis kochen",
-        "description": "Den Reis im gesalzenen Wasser kochen (Auf 1 Teil Reis etwa 2 Teile Wasser)"
-      },
-      {
         "title": "Gemüse schneiden",
-        "description": "Zwiebel, Paprika, Karotten und Chili würfeln und die Frühlingsziebeln in feine Rädchen schneiden. Beim Pak Choi das Blatt vom Stiel trennen, den Stihl ebenfalls würfeln, die Blätter in Stücke reißen."
+        "description": "Die Zwiebeln und die Knoblauchzehen schälen und in feine Würfel schneiden. Die Paprikaschote waschen, entkernen und in kleine Würfel schneiden, die Tomaten waschen, Strunk entfernen und mit Fruchtfleisch klein würfeln. "
       },
       {
-        "title": "Anbraten",
-        "description": "Die Zwiebelwürfel in Butter anbraten, bis sie glasig sind. Danach das Hähnchen hinzufügen und goldbraun anbraten."
-      },
-      {
-        "title": "Gemüse hinzufügen",
-        "description": "Frühlingszwiebeln und Karotten in die Pfanne geben, wenig später auch Paprika, Chili und die Pak Choi-Stiele hinzufügen."
+        "title": "Gemüse anbraten",
+        "description": "In einer großen Pfanne etwas Butter erhitzen bis sie schäumt, dann Paprikapulver hinzufügen und kurz anrösten bis es duftet. Im Anschluss Paprika, Tomaten, Zwiebel und Knoblauch 3 Minuten darin bei mittlerer Hitze andünsten."
       },
       {
         "title": "Reis dazugeben",
-        "description": "Den gekochten Reis und die Pak Choi Blätter zum Schluss beimischen und weiter anbraten."
+        "description": "Jetzt den ungekochten Reis unter rühren und den Ajvar, Tomatenmark und Olivenöl dazugeben."
       },
       {
-        "title": "Würzen",
-        "description": "Mit der Sojasoße ablöschen und mit Kreuzkümmel, Curry und etwas Koriander abschmecken."
+        "title": "Köcheln lassen",
+        "description": "Im Anschluss mit Gemüsebrühe ablöschen und mit Salz und schwarzem Pfeffer würzen. Mit Deckel bei kleiner Hitze 15 Minuten garen. Im Anschluss die TK-Erbsen unterrühren und weitere 5 Minuten mit Deckel garen bzw. bis die Flüssigkeit sämig eingedickt ist. "
+      },
+      {
+        "title": "Abschmecken",
+        "description": "Zum Schluss noch nach Belieben Abschmecken und servieren."
+      },
+      {
+        "title": "Tipp",
+        "description": "Schmeckt besonders zu Cevapcici sehr lecker."
       }
     ],
     "author": "Felix"
