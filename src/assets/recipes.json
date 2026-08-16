@@ -756,9 +756,115 @@
       },
       {
         "title": "Guss zubereiten",
-        "description": "Die Sahne und die Zartbitterschokolade schmelzen, kurz abkühlen lassen und dann über die Torte geben"
+        "description": "Die Sahne und die Zartbitterschokolade schmelzen, kurz abkühlen lassen und dann über die Torte geben."
       }
     ],
     "author": "Omi"
+  },
+  {
+    "id": 10,
+    "title": "Hähnchen Wok",
+    "slug": "haehnchen-wok",
+    "image": "HaehncchenWok.jpg",
+    "badges": [],
+    "time": 60,
+    "difficulty": "Mittel",
+    "type": ["salzig", "kochen"],
+    "mealType": ["hauptspeise"],
+    "portions": 4,
+    "ingredients": [
+      {
+        "title": "Für den Wok",
+        "ingredientList": [
+          {
+            "ingredientName": "Langkorn Reis",
+            "ingredientAmount": 500,
+            "ingredientUnit": "g"
+          },
+          {
+            "ingredientName": "Zwiebel",
+            "ingredientAmount": 1,
+            "ingredientUnit": null
+          },
+          {
+            "ingredientName": "Paprika",
+            "ingredientAmount": 2,
+            "ingredientUnit": null
+          },
+          {
+            "ingredientName": "Karotten",
+            "ingredientAmount": 5,
+            "ingredientUnit": null
+          },
+          {
+            "ingredientName": "Chili",
+            "ingredientAmount": 1,
+            "ingredientUnit": null
+          },
+          {
+            "ingredientName": "Frühlingszwiebeln",
+            "ingredientAmount": 5,
+            "ingredientUnit": null
+          },
+          {
+            "ingredientName": "Pak Choi",
+            "ingredientAmount": 2,
+            "ingredientUnit": null
+          },
+          {
+            "ingredientName": "Hähnchenbrustfilets",
+            "ingredientAmount": 600,
+            "ingredientUnit": "g"
+          },
+          {
+            "ingredientName": "Sojasoße",
+            "ingredientAmount": 1,
+            "ingredientUnit": "Schuss"
+          },
+          {
+            "ingredientName": "Kreuzkümmel",
+            "ingredientAmount": null,
+            "ingredientUnit": null
+          },
+          {
+            "ingredientName": "Currry",
+            "ingredientAmount": null,
+            "ingredientUnit": null
+          },
+          {
+            "ingredientName": "Koriander",
+            "ingredientAmount": null,
+            "ingredientUnit": null
+          }
+        ]
+      }
+    ],
+    "preparation": [
+      {
+        "title": "Reis kochen",
+        "description": "Den Reis im gesalzenen Wasser kochen (Auf 1 Teil Reis etwa 2 Teile Wasser)"
+      },
+      {
+        "title": "Gemüse schneiden",
+        "description": "Zwiebel, Paprika, Karotten und Chili würfeln und die Frühlingsziebeln in feine Rädchen schneiden. Beim Pak Choi das Blatt vom Stiel trennen, den Stihl ebenfalls würfeln, die Blätter in Stücke reißen"
+      },
+      {
+        "title": "Anbraten",
+        "description": "Die Zwiebelwürfel in Butter anbraten, bis sie glasig sind. Danach das Hähnchen hinzufügen und goldbraun anbraten."
+      },
+      {
+        "title": "Gemüse hinzufügen",
+        "description": "Frühlingszwiebeln und Karotten in die Pfanne geben, wenig später auch Paprika, Chili und die Pak Choi-Stiele hinzufügen."
+      },
+      {
+        "title": "Reis dazugeben",
+        "description": "Den gekochten Reis und die Pak Choi Blätter zum Schluss beimischen und weiter anbraten."
+      },
+      {
+        "title": "Würzen",
+        "description": "Mit der Sojasoße ablöschen und mit Kreuzkümmel, Curry und etwas Koriander abschmecken"
+      }
+    ],
+    "author": "Felix"
   }
 ]
