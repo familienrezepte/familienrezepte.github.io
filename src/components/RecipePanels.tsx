@@ -133,8 +133,9 @@ const RecipePanels = () => {
         display="flex"
         textAlign="center"
         width="90%"
-        justifyItems={"center"}
-        alignItems={"center"}
+        justifyItems="center"
+        alignItems="center"
+        margin="auto"
       >
         <InputGroup
           flex="1"
@@ -143,7 +144,10 @@ const RecipePanels = () => {
           endElement={
             <i
               className="fa-solid fa-xmark"
-              onClick={() => setSearchTerm("")}
+              onClick={() => {
+                setSearchTerm("");
+                console.log(filteredRecipes);
+              }}
             ></i>
           }
         >
@@ -162,6 +166,7 @@ const RecipePanels = () => {
         width="90%"
         justifyContent="space-between"
         alignItems="center"
+        margin="auto"
       >
         <SelectRoot
           multiple
@@ -577,6 +582,35 @@ const RecipePanels = () => {
           ))}
         </div>
       </div>
+      <div style={{ marginTop: "10vh", marginBottom: "10vh", padding: "auto" }}>
+        <div
+          className="onesignal-customlink-container"
+          style={{ textAlign: "center" }}
+        ></div>
+      </div>
+      <Button
+        position="fixed"
+        bottom="0.5em"
+        left="0.5em"
+        padding="0.7em 0.9em 0.9em 0.7em"
+        width="2em"
+        height="2em"
+        borderRadius="full"
+        zIndex="10"
+        fontSize="3em"
+        bg={{ base: "rgb(240,241,233)", _dark: "rgb(15,15,15)" }}
+        color="rgb(127, 127, 127)"
+        onClick={() => {
+          console.log(filteredRecipes);
+          let randomlyChosenRecipe =
+            filteredRecipes[Math.floor(Math.random() * filteredRecipes.length)]
+              .slug;
+          console.log(randomlyChosenRecipe);
+          window.location.assign("/#/" + randomlyChosenRecipe);
+        }}
+      >
+        <i className="fa-solid fa-dice"></i>
+      </Button>
     </>
   );
 };

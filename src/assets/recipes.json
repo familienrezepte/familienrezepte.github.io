@@ -51,7 +51,7 @@
         "description": "Pfannkuchen lassen sich auf vielfältige Weise genießen. Im Frühling werden sie oft mit Spargel, Schinken und Sauce Hollandaise serviert, während sie zu anderen Zeiten gerne süß belegt werden, zum Beispiel mit Zimt und Zucker, Apfelmus oder Nutella und Banane. Übrigens: Übrig gebliebene Pfannkuchen können am nächsten Tag hervorragend zu einer Flädlesuppe weiterverarbeitet werden!"
       }
     ],
-    "author": "Bruno Burger"
+    "author": "Regina"
   },
   {
     "id": 2,
@@ -115,7 +115,7 @@
         "description": "Pfanne vom Herd nehmen und die Eier-Parmesan-Mischung unterrühren, bis die Sauce cremig wird. Mit Salz und Pfeffer abschmecken."
       }
     ],
-    "author": "Felix Burger"
+    "author": "Felix"
   },
   {
     "id": 3,
@@ -228,7 +228,7 @@
         "description": "Sobald die Schnecken im Ofen sind, bereitet man den Guss zu. Dafür die Sahne mit dem Zucker und Vanillezucker in einem Topf erhitzen und dann auf leiser Flamme köcheln lassen. Immer wieder umrühren. Der Guss fängt mit der Zeit an etwas dickflüssig zu werden. Die Schnecken aus dem Ofen nehmen und dann sofort den Guss esslöffelweise auf den Schnecken, die noch in der Form sind, verteilen."
       }
     ],
-    "author": "Felix Burger"
+    "author": "Felix"
   },
   {
     "id": 4,
@@ -351,7 +351,7 @@
         "description": "Als Beilage eignen sich besonders Naan und Basmatireis."
       }
     ],
-    "author": "Felix Burger"
+    "author": "Felix"
   },
   {
     "id": 5,
@@ -425,7 +425,7 @@
         "description": "1 Portion ergibt 1 Tasse."
       }
     ],
-    "author": "Felix Burger"
+    "author": "Felix"
   },
   {
     "id": 6,
@@ -499,7 +499,7 @@
         "description": "Im vorgeheizten Backofen bei 200°C Ober-/Unterhitze ca. 10 Minuten backen."
       }
     ],
-    "author": "Felix Burger"
+    "author": "Felix"
   },
   {
     "id": 7,
@@ -553,7 +553,7 @@
         "description": "Sofern man die Spätzle nicht sofort weiterverarbeitet, mit kaltem Wasser abschrecken und abtropfen lassen. Wenn man die Spätzle zum Beispiel sofort in einer Pfanne mit Butter anröstet ist das Abschrecken nicht notwendig."
       }
     ],
-    "author": "Bruno Burger"
+    "author": "Bruno"
   },
   {
     "id": 8,
@@ -652,6 +652,113 @@
         "description": "Nach dem Erkalten mit Kuvertüre überziehen."
       }
     ],
-    "author": "Felix Burger"
+    "author": "Felix"
+  },
+  {
+    "id": 9,
+    "title": "Schoko-Bananen-Torte",
+    "slug": "schoko-bananen-torte",
+    "image": "SchokoBananenTorte.jpg",
+    "badges": [],
+    "time": 120,
+    "difficulty": "Schwer",
+    "type": ["süß", "backen"],
+    "mealType": ["dessert", "snack"],
+    "portions": 12,
+    "ingredients": [
+      {
+        "title": "Für den Biskuitteig",
+        "ingredientList": [
+          {
+            "ingredientName": "Eier",
+            "ingredientAmount": 3,
+            "ingredientUnit": null
+          },
+          {
+            "ingredientName": "Zucker",
+            "ingredientAmount": 100,
+            "ingredientUnit": "g"
+          },
+          {
+            "ingredientName": "Mehl",
+            "ingredientAmount": 100,
+            "ingredientUnit": "g"
+          }
+        ]
+      },
+      {
+        "title": "Für den Guss",
+        "ingredientList": [
+          {
+            "ingredientName": "Sahne",
+            "ingredientAmount": 80,
+            "ingredientUnit": "ml"
+          },
+          {
+            "ingredientName": "Zartbitterschokolade",
+            "ingredientAmount": 100,
+            "ingredientUnit": "g"
+          }
+        ]
+      },
+      {
+        "title": "Für den Belag",
+        "ingredientList": [
+          {
+            "ingredientName": "Bananen",
+            "ingredientAmount": 4,
+            "ingredientUnit": null
+          },
+          {
+            "ingredientName": "Milch",
+            "ingredientAmount": 500,
+            "ingredientUnit": "ml"
+          },
+          {
+            "ingredientName": "Vanillepuddingpulver",
+            "ingredientAmount": 1,
+            "ingredientUnit": "Pck."
+          },
+          {
+            "ingredientName": "Zucker",
+            "ingredientAmount": 3,
+            "ingredientUnit": "EL"
+          },
+          {
+            "ingredientName": "Gelatine",
+            "ingredientAmount": 7,
+            "ingredientUnit": "Blatt"
+          },
+          {
+            "ingredientName": "Sahne",
+            "ingredientAmount": 2,
+            "ingredientUnit": "Becher"
+          }
+        ]
+      }
+    ],
+    "preparation": [
+      {
+        "title": "Vorbereitung für den Biskuitteig",
+        "description": "Backofen auf 190 Grad Ober- und Unterhitze vorheizen. Den Boden einer 26 cm Springform mit Backpapier belegen oder einfetten."
+      },
+      {
+        "title": "Biskuitteig herstellen: Schritt 1",
+        "description": "Die Eier sauber trennen. Die Eiweiße mit dem Salz steif schlagen; langsam die Hälfte des Zuckers einriesen lassen. Es darf absolut kein Eigelb ins Eiweiß gelangen; außerdem müssen die Rührschüssel und die Rührbesen fettfrei sein. Eigelbe mit dem restlichen Zucker cremig schlagen. Die Eier-Zucker-Masse danach auf den Eischnee gleiten lassen und vorsichtig unterheben. Nicht mehr rühren, da die Luftbläschen sonst entweichen!"
+      },
+      {
+        "title": "Biskuitteig herstellen: Schritt 2",
+        "description": "Das Mehl und das Backpulver in einer separaten Schüssel mischen. Die Mehlmischung nach und nach portionsweise auf die Eiercreme sieben und vorsichtig unterheben. Den Biskuitteig in die Backform geben, glattstreichen und sofort rund 15-20 Minuten backen, bis er goldgelb ist. Danach den Deckel des Biskuitbodens vorsichtig abschneiden."
+      },
+      {
+        "title": "Belag zubereiten",
+        "description": "Die Bananen halbieren und auf den Biskuitboden legen. Aus der Milch und dem Puddingpulver einen Pudding kochen. Die eingeweichte Gelatine unterheben und das Ganze erkalten lassen. Zuletzt die steif geschlagene Sahne unterheben. Danach die Masse auf den Bananen verteilen und fest werden lassen"
+      },
+      {
+        "title": "Guss zubereiten",
+        "description": "Die Sahne und die Zartbitterschokolade schmelzen, kurz abkühlen lassen und dann über die Torte geben"
+      }
+    ],
+    "author": "Omi"
   }
 ]
