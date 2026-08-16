@@ -143,6 +143,7 @@ const RecipePage = () => {
                       {ingredient.title}
                     </Heading>
                     <DataListRoot
+                      minWidth="12vh"
                       orientation="horizontal"
                       size="lg"
                       key={String(ingredient.title + "list")}
@@ -151,21 +152,19 @@ const RecipePage = () => {
                         <DataListItem
                           key={ingredientList.ingredientName}
                           label={
-                            <div style={{ minWidth: "12vh" }}>
-                              {(ingredientList.ingredientAmount
-                                ? parseFloat(
-                                    (
-                                      (ingredientList.ingredientAmount *
-                                        Number(selectedPortions)) /
-                                      recipe.portions
-                                    ).toFixed(2),
-                                  ).toString()
-                                : "") +
-                                " " +
-                                (ingredientList.ingredientUnit
-                                  ? ingredientList.ingredientUnit
-                                  : "")}
-                            </div>
+                            (ingredientList.ingredientAmount
+                              ? parseFloat(
+                                  (
+                                    (ingredientList.ingredientAmount *
+                                      Number(selectedPortions)) /
+                                    recipe.portions
+                                  ).toFixed(2),
+                                ).toString()
+                              : "") +
+                            " " +
+                            (ingredientList.ingredientUnit
+                              ? ingredientList.ingredientUnit
+                              : "")
                           }
                           value={ingredientList.ingredientName}
                         />
