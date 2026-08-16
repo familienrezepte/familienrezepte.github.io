@@ -239,14 +239,14 @@
     "time": 70,
     "difficulty": "Mittel",
     "type": ["salzig", "kochen"],
-    "mealType": ["Hauptspeise"],
+    "mealType": ["hauptspeise"],
     "portions": 4,
     "ingredients": [
       {
         "title": "Für die Sauce",
         "ingredientList": [
           {
-            "ingredientName": "Hähnchenbrustfilets",
+            "ingredientName": "Hähnchenbrust",
             "ingredientAmount": 600,
             "ingredientUnit": "g"
           },
@@ -765,7 +765,7 @@
     "id": 10,
     "title": "Hähnchen Wok",
     "slug": "haehnchen-wok",
-    "image": "HaehncchenWok.jpg",
+    "image": "HaehnchenWok.jpg",
     "badges": [],
     "time": 60,
     "difficulty": "Mittel",
@@ -812,7 +812,7 @@
             "ingredientUnit": null
           },
           {
-            "ingredientName": "Hähnchenbrustfilets",
+            "ingredientName": "Hähnchenbrust",
             "ingredientAmount": 600,
             "ingredientUnit": "g"
           },
@@ -863,6 +863,74 @@
       {
         "title": "Würzen",
         "description": "Mit der Sojasoße ablöschen und mit Kreuzkümmel, Curry und etwas Koriander abschmecken"
+      }
+    ],
+    "author": "Felix"
+  },
+  {
+    "id": 11,
+    "title": "Überbackene Maultaschen",
+    "slug": "ueberbackene-maultaschen",
+    "image": "UeberbackeneMaultaschen.jpg",
+    "badges": ["vegetarisch"],
+    "time": 10,
+    "difficulty": "Mittel",
+    "type": ["salzig", "kochen"],
+    "mealType": ["hauptspeise"],
+    "portions": 2,
+    "ingredients": [
+      {
+        "title": "Für die überbackenen Maultaschen",
+        "ingredientList": [
+          {
+            "ingredientName": "(vegetarische) Maultaschen",
+            "ingredientAmount": 720,
+            "ingredientUnit": "g"
+          },
+          {
+            "ingredientName": "Tomatensauce",
+            "ingredientAmount": 500,
+            "ingredientUnit": "g"
+          },
+          {
+            "ingredientName": "Gratinkäse",
+            "ingredientAmount": null,
+            "ingredientUnit": null
+          },
+          {
+            "ingredientName": "Salz",
+            "ingredientAmount": null,
+            "ingredientUnit": null
+          },
+          {
+            "ingredientName": "Pfeffer",
+            "ingredientAmount": null,
+            "ingredientUnit": null
+          },
+          {
+            "ingredientName": "Italienische Kräuter",
+            "ingredientAmount": null,
+            "ingredientUnit": null
+          }
+        ]
+      }
+    ],
+    "preparation": [
+      {
+        "title": "Tomatensuce würzen",
+        "description": "Die Tomatensauce mit Salz, Pfeffer und italienischen Kräutern würzen."
+      },
+      {
+        "title": "Auflaufform füllen",
+        "description": "Die Maultaschen in die Auflaufform legen, darüber die Tomatensauce verteilen. Zum Schluss den Gratinkäse drüberstreuen."
+      },
+      {
+        "title": "Magie der Mikrowelle",
+        "description": "Jetzt die Auflaufform in die MIkrowelle geben. Zunächst für 3 Minuten bei 900 Watt. Danach auf den 'Grillmodus' umstellen und mit 360 Watt nochmal etwa 6 Minuten in der Mikrowelle lassen."
+      },
+      {
+        "title": "Ofen",
+        "description": "Alternativ kann auch ein Ofen mit Ober- und Unterhitze verwendet werden."
       }
     ],
     "author": "Felix"
