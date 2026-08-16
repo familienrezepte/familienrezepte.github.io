@@ -127,6 +127,7 @@ const RecipePage = () => {
                   Portionen:
                 </Heading>
                 <StepperInput
+                  marginBottom="2vh"
                   defaultValue={recipe?.portions.toString()}
                   min={1}
                   max={100}
